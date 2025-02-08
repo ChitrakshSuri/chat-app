@@ -1,15 +1,12 @@
-import "./userInfo.css"
-import { useUserStore } from "../../../lib/userStore";
+import React from "react";
+import "./userInfo.css";
 
-const Userinfo = () => {
-
-  const { currentUser } = useUserStore();
-
+const UserInfo = () => {
   return (
-    <div className='userInfo'>
+    <div className="userInfo">
       <div className="user">
-        <img src={currentUser.avatar || "./avatar.png"} alt="" />
-        <h2>{currentUser.username}</h2>
+        <img src="./avatar.png" alt="" />
+        <h2>Shourya Suri</h2>
       </div>
       <div className="icons">
         <img src="./more.png" alt="" />
@@ -17,7 +14,7 @@ const Userinfo = () => {
         <img src="./edit.png" alt="" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Userinfo
+export default UserInfo;

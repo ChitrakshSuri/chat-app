@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <div className="container">
-      {currentUser ? (
+      {user ? (
         <>
           <List />
           <Chat />
